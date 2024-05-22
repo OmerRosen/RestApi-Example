@@ -1,5 +1,15 @@
+// Initial Project Set-up:
 dotnet  new sln -o BuberBreakfast
 cd "BuberBreakfast"
 dotnet new classlib -o BuberBreakfast.Contracts
 dotnet new webapi -o BuberBreakfast
 dotnet sln add ./BuberBreakfast ./BuberBreakfast.Contracts
+dotnet add .\BuberBreakfast\ reference .\BuberBreakfast.Contracts\
+dotnet build
+
+// Integrating with git:
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/your-username/your-repository.git
+git push -u origin master
