@@ -1,4 +1,4 @@
 
-@id = 00000000-0000-0000-0000-000000000000
+@id = 774a7cb0-39ff-42ad-9d4a-48ed1aacff7a
 GET http://localhost:5204/breakfests/{{id}}
 Content-Type: application/json

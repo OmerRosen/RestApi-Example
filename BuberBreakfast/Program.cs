@@ -8,9 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<IBreakfastService, BreakfastService>();
 
 var app = builder.Build();
-
+app.UseExceptionHandler("/error");
 app.UseHttpsRedirection();
 app.MapControllers();
-
-
 app.Run();
